@@ -41,12 +41,11 @@ models:
     raw:
       +materialized: table
       database: modatabricks_premium
+      +target_database: modatabricks_premium
     reporting:
       +materialized: view
       database: modatabricks_premium
     staging:
       +materialized: table
       database: modatabricks_premium
-
-snapshots:
-    +target_database: modatabricks_premium
+    
