@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: databricks_globalmart
+    catalog: modatabricks_premium
+    schema: dbt
+    tables:
+      - name: customers
+      - name: orders
+      - name: products

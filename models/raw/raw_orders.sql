@@ -1,1 +1,2 @@
-select * from raw.orders
+select * from
+{{ source('databricks_globalmart', 'orders') }}
